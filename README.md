@@ -1,5 +1,5 @@
 \ VITALYX -
-
+# fULL PROMPT 
 
 Normal Prompt 
 
