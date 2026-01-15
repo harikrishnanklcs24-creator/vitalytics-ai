@@ -1,73 +1,155 @@
-# Welcome to your Lovable project
+# VITALYX – AI-Powered Healthcare Analytics Platform
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**VITALYX** is a modern, AI-driven healthcare web application designed to help users track, analyze, and improve their health through data visualization, AI assistance, and admin-level monitoring.  
+The platform provides interactive dashboards, health analytics, chatbot support, and voice-based AI interaction, all wrapped in a responsive and visually rich UI.
 
-## How can I edit this code?
+This project is built using **Lovable**, enabling rapid development through prompts while maintaining full code control.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Core Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 1. Authentication & Roles
+- Secure login & signup system
+- Role-based access control:
+  - **Admin** (acts as health supervisor / trainer)
+  - **User**
+- Default admin credentials:
+  - Email: `admin@gmail.com`
+  - Password: `admin@123`
+- JWT-based authentication
+- Protected routes for admin-only access
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+### 2. User Health Data Management
+Users can log and manage daily healthcare data such as:
+- Blood Pressure (Systolic & Diastolic)
+- Blood Sugar
+- Heart Rate
+- SpO₂ (Oxygen Level)
+- Body Temperature
+- Calories intake
+- Steps count
+- Water intake
+- Sleep duration
+- Height & Weight (BMI auto-calculated)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Derived insights:
+- Health Score (0–100)
+- Status indicators (Good / Warning / Critical)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### 3. User Dashboard & Analytics
+A rich analytics dashboard with animated and responsive charts:
+- Line charts for BP, sugar, weight trends
+- Bar charts for calories and steps
+- Area chart for health score progression
+- Pie & donut charts for lifestyle and goal completion
+- Radar chart for overall health performance
+
+Dashboard includes:
+- Summary cards
+- Tooltips & legends
+- Theme-aware charts (Dark / Light mode)
+
+---
+
+### 4. AI Healthcare Chatbot (Text)
+- AI-powered chatbot using **Google LLM (Gemini)**
+- Answers healthcare-related questions
+- Analyzes user health data contextually
+- Provides lifestyle suggestions (non-diagnostic)
+- Stores all user enquiries for admin review
+- Floating chat UI with typing animation
+
+---
+
+### 5. ElevenLabs Voice AI Integration
+- Embedded ElevenLabs ConvAI widget
+- Fixed on the right side for desktop
+- Collapsible/floating on mobile devices
+- Smooth animations and theme compatibility
+- Enables voice-based healthcare interaction
+
+---
+
+### 6. Admin (Trainer) Dashboard
+Admin capabilities:
+- View all registered users
+- Filter users by health status
+- Access full health history of any user
+- View analytics per user
+- Monitor chatbot enquiries
+- View overall system usage and activity
+
+Admin analytics include:
+- User activity charts
+- Enquiry trends
+- Health status distribution
+- Active vs inactive users
+
+---
+
+### 7. Enquiry Management System
+- Users can submit health-related questions
+- Admin can:
+  - View all enquiries
+  - Filter by user/date
+  - Review health context with each enquiry
+
+---
+
+### 8. UI / UX & Responsiveness
+- Fully mobile-friendly (mobile-first design)
+- Responsive menu bar:
+  - Sidebar + top navbar (desktop)
+  - Hamburger menu & bottom navigation (mobile)
+- Dark & Light theme toggle
+- Smooth animations and transitions
+- Modern UI with glassmorphism cards
+- Toast notifications and interactive feedback
+
+---
+
+## Tech Stack
+
+### Frontend
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn-ui
+- Chart.js / Recharts
+
+### Backend (Planned / Integrated)
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+
+### AI & Integrations
+- Google LLM (Gemini)
+- ElevenLabs ConvAI (Voice AI)
+
+---
+
+## Project Setup
+
+### Local Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
