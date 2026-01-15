@@ -55,7 +55,7 @@ export default function Login() {
           </form>
 
           <p className="text-center text-sm text-muted-foreground mt-6">
-            Don't have an account?  username :-admin@gmail.com  pass:- admin@123 <Link to="/signup" className="text-primary font-medium hover:underline">Sign Up</Link>
+            Don't have an account?  admin options  username :-admin@gmail.com  pass:- admin@123 <Link to="/signup" className="text-primary font-medium hover:underline">Sign Up</Link>
           </p>
           <p className="text-center text-sm text-muted-foreground mt-2">
             <Link to="/" className="hover:underline">← Back to Home</Link>
